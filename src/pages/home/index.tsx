@@ -8,7 +8,7 @@ import Footer from '../_components/Footer'
 import GetStartedSection from '../_components/GetStartedSection'
 import WhyChooseSection from '../_components/WhyChooseSection'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       <div 
@@ -33,4 +33,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage
