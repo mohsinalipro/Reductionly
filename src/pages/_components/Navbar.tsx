@@ -10,7 +10,7 @@ import GlobalBtn from "./GlobalBtn";
 
 const navItems = [
   { label: "HOME", href: "/home" },
-  { label: "HOW IT WORKS", href: "/how-it-works" },
+  { label: "HOW IT WORKS", href: "#how-it-works" },
   { label: "FAQS", href: "/faqs" },
   { label: "CONTACT", href: "/contact-us" },
 ];
@@ -20,18 +20,30 @@ const Navbar = () => {
   const router = useRouter();
 
   const handleNavClick = (href: string) => {
-    setIsOpen(false); 
-    router.push(href);
+    setIsOpen(false);
+    if (href.startsWith("#")) {
+      const targetElement = typeof document !== "undefined" ? document.querySelector(href) : null;
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      } else {
+        router.push(`/home${href}`);
+      }
+    } else {
+      router.push(href);
+    }
   };
 
   return (
     <div className="max-w-screen-xl mx-auto px-5 relative z-50">
-      <nav className="w-full py-7 flex items-center justify-between text-[#F8FDE9]">
-        <div className="text-2xl font-bold tracking-wide cursor-pointer" onClick={() => router.push("/home")}>
+      <nav className="w-full py-7 flex items-center justify-between text-white">
+        <div
+          className="text-2xl font-bold tracking-wide cursor-pointer"
+          onClick={() => router.push("/home")}
+        >
           <Image src={Logo} alt="Brand Logo" className="w-28 md:w-32 lg:w-[160px]" />
         </div>
 
-        <div className="hidden md:flex space-x-6 items-center text-[#F8FDE9]">
+        <div className="hidden md:flex space-x-6 items-center">
           {navItems.map((item) => (
             <button
               key={item.label}
@@ -66,7 +78,7 @@ const Navbar = () => {
       </nav>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full flex flex-col items-center space-y-6 px-6 py-6 bg-[#004725] md:hidden text-[#F8FDE9]">
+        <div className="absolute top-16 left-0 w-full flex flex-col items-center space-y-6 px-6 py-6 bg-[#004725] md:hidden">
           {navItems.map((item) => (
             <button
               key={item.label}
@@ -78,11 +90,11 @@ const Navbar = () => {
           ))}
           <div className="flex gap-2 flex-wrap">
             <GlobalBtn
-              className="h-12 w-[135px] bg-[#F8FDE9] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+              className="h-12 w-[135px] bg-[#F8FDE9] text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
               text="GET STARTED"
             />
             <GlobalBtn
-              className="h-12 w-[98px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+              className="h-12 w-[98px] bg-[#BADA50] text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
               text="Login"
             />
           </div>
@@ -93,3 +105,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

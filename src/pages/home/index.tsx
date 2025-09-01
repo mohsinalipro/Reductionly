@@ -25,7 +25,7 @@ const HomePage = () => {
       <div className="md:px-3">
         <Specializations/>
       </div>
-      <div className=""><HowItWorks/></div>
+      <div id="how-it-works" className=""><HowItWorks/></div>
       <WhyChooseSection/>
       <GetStartedSection/>
       <Footer/>

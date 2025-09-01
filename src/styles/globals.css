@@ -35,3 +35,7 @@ body {
     background-image: url(../_assets/pngs/how-it-works-mobile-bg.png);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
