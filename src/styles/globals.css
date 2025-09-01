@@ -16,12 +16,22 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #004725;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.how-it-works-bg{
+  background-image: url(../_assets/pngs//how-it-works-bg.png);
+}
+
+@media (max-width: 768px) {
+  .how-it-works-bg{
+    background-image: url(../_assets/pngs/how-it-works-mobile-bg.png);
   }
 }
