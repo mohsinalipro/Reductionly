@@ -7,13 +7,13 @@ import GlobalBtn from "./GlobalBtn";
 
 const ContactSection: FC = () => {
   return (
-    <section className="bg-[#F8FDE9] pt-16 pb-16 md:pb-28 px-6 rounded-t-[50px] md:mx-3 text-[#062014]">
+    <section className="bg-[#F8FDE9] pt-12 md:pt-16 pb-16 md:pb-28 px-6 rounded-t-[40px] md:rounded-t-[50px] md:mx-3 text-[#062014]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 lg:gap-12">
-        <div className="mt-10 text-center md:text-left">
+        <div className="md:mt-10 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight mb-6 leading-snug">
             GOT A QUESTION? <br /> NEED HELP GETTING STARTED?
           </h2>
-          <p className="text-base md:text-lg md:leading-6 mb-10 max-w-[442px] mx-auto md:mx-0">
+          <p className="text-base md:text-lg md:leading-6 mb-4 md:mb-10 max-w-[442px] mx-auto md:mx-0">
             Whether you’re exploring your repayment options or you’re already
             working with Reductionly, our team is ready to support you every
             step of the way.
@@ -53,7 +53,7 @@ const ContactSection: FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#004725] text-white py-9 md:py-11 lg:py-14 px-5 md:px-11 rounded-[32px]">
+        <div className="bg-[#004725] text-white py-9 md:py-11 lg:py-14 px-5 md:px-11 rounded-[14px] md:rounded-[32px]">
           <p className="mb-6 text-lg">
             Have a quick question? Use our contact form below, and we’ll get
             back to you shortly.
@@ -96,7 +96,7 @@ const ContactSection: FC = () => {
               ></textarea>
             </div>
             <GlobalBtn
-              className='h-14 w-full md:w-[190px] bg-white !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 uppercase font-semibold shadow-[6px_6px_0px_#BADA50]'
+              className='h-14 w-full !mb-1 md:w-[190px] bg-white !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 uppercase font-semibold shadow-[6px_6px_0px_#BADA50]'
               text='SUBMIT MESSAGE'
             />
           </form>

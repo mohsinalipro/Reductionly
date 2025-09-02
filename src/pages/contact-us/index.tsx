@@ -20,7 +20,7 @@ const ContactUs = () => {
         <ContactHero/>
       </div>
       <ContactSection/>
-      <div className="bg-[#004725] pt-14 -mt-14 rounded-t-[54px]">
+      <div className="bg-[#004725] pt-3 -mt-14 rounded-t-[54px]">
       <GetStartedSection/>
       </div>
       <Footer/>

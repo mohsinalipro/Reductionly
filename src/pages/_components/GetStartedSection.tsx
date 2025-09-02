@@ -36,7 +36,7 @@ const testimonials = [
     text: "",
     name: "",
     img: CardImg2,
-    position: "right-[5%] top-[3%] md:top-[35%]",
+    position: "right-[5%] top-[6%] md:top-[35%]",
   },
   {
     id: 5,
@@ -54,9 +54,9 @@ const GetStartedSection: FC = () => {
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}>
-      <div className="relative md:w-[70%] mx-auto min-h-[500px] md:min-h-[800px] lg:min-h-[800px] text-center py-20 overflow-hidden flex justify-center items-center px-5">
+      <div className="relative md:w-[70%] mx-auto min-h-[600px] md:min-h-[800px] lg:min-h-[800px] text-center py-20 overflow-hidden flex justify-center items-center px-5">
         <div className="relative z-10 text-[#F8FDE9] max-w-[382px]">
-          <h2 className="text-[32px] md:text-[44px] font-medium mb-4 leading-[34px] md:leading-[48px]">
+          <h2 className="text-[32px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px]">
             READY TO GET STARTED?
           </h2>
           <p className="max-w-md mx-auto mb-6">

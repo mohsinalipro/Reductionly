@@ -13,7 +13,7 @@ const Footer: FC = () => {
       <div className="grid gap-10 grid-cols-1 md:grid-cols-[350px_repeat(auto-fit,minmax(140px,1fr))]">
         <div className="max-w-[350px]">
           <div className="text-2xl font-bold tracking-wide flex justify-center md:justify-start" onClick={() => router.push("/home")}>
-            <Image src={Logo} alt="Brand Logo" className="w-28 md:w-32 lg:w-[160px]" />
+            <Image src={Logo} alt="Brand Logo" className="w-32 lg:w-[160px]" />
           </div>
           <p className="text-sm md:text-base leading-relaxed text-[#F8FDE9] mt-3 md:mt-4 md:text-left text-center">
             At Reductionly, we believe that your student loans shouldn’t hold you back

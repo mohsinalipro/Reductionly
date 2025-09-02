@@ -4,15 +4,15 @@ import GlobalBtn from "./GlobalBtn";
 
 const HomeHeroSection = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-9 items-center gap-10 text-white max-w-screen-xl mx-auto px-5">
+    <section className="grid grid-cols-1 md:grid-cols-9 items-center gap-7 md:gap-10 text-white max-w-screen-xl mx-auto px-5">
       <div className="col-span-1 md:col-span-4 mb-14 md:mb-0 md:py-10 order-2 md:order-1">
         <p className="text-lime-300 font-semibold mb-2 md:text-lg">
           SMARTER STUDENT LOAN SOLUTIONS. REAL RESULTS.
         </p>
-        <h1 className="text-[40px] md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-[#F8FDE9]">
+        <h1 className="text-[40px] md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 md:mb-4 text-[#F8FDE9]">
           TAKE CONTROL OF YOUR STUDENT LOANS TODAY
         </h1>
-        <p className="mb-6 text-[#F8FDE9] text-lg">
+        <p className="mb-5 md:mb-6 text-[#F8FDE9] text-lg">
           At Reductionly, we believe that your student loans shouldn&apos;t hold
           you back from achieving your goals. That&apos;s why we built powerful
           software designed to help you reduce your monthly payments, avoid

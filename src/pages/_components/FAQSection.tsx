@@ -57,7 +57,7 @@ and loan consolidation — all in one easy-to-use system.`,
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const router = useRouter(); // ✅ router hook
+  const router = useRouter();
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -67,7 +67,10 @@ const FAQSection = () => {
     <section className="bg-[#F8FDE9] pt-10 md:pt-20 lg:pt-28 pb-24 md:pb-28 lg:pb-32 px-4 rounded-t-[50px] md:mx-3">
       <div className="max-w-5xl mx-auto px-1">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-300">
+          <div
+            key={index}
+            className={`${index !== faqs.length - 1 ? "border-b border-gray-300" : ""}`}
+          >
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center py-8 text-left"
@@ -91,9 +94,8 @@ const FAQSection = () => {
           </div>
         ))}
 
-        {/* Bottom Card */}
         <div
-          className="mt-10 min-h-[267px] text-center text-[#F8FDE9] py-10 px-6 rounded-[32px] flex items-center justify-center bg-cover"
+          className="mt-5 min-h-[267px] text-center text-[#F8FDE9] py-10 px-6 rounded-[32px] flex items-center justify-center bg-cover"
           style={{
             backgroundImage: `url('${BgImg.src}')`,
             backgroundPosition: "left right",
