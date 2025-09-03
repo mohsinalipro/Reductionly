@@ -4,13 +4,24 @@ import HowItWorksHero from "./Hero";
 import ProcessSteps from "./Steps";
 import WhyProcess from "./WhyProcess";
 import CircleCta from "./CircleCta";
+import HeroBg from "../../_assets/pngs/hero-bg.png";
 
 export default function HowItWorksPage() {
   return (
     <div>
-      <Navbar />
-      <HowItWorksHero />
-      <ProcessSteps />
+      <div
+        style={{
+          backgroundImage: `url(${HeroBg.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top left",
+        }}
+      >
+        <Navbar />
+        <HowItWorksHero />
+      </div>
+      <div className="md:px-3">
+        <ProcessSteps />
+      </div>
       <WhyProcess />
       <CircleCta />
       <Footer />

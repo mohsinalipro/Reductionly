@@ -10,7 +10,7 @@ import GlobalBtn from "./GlobalBtn";
 
 const navItems = [
   { label: "HOME", href: "/home" },
-  { label: "HOW IT WORKS", href: "#how-it-works" },
+  { label: "HOW IT WORKS", href: "/how-it-works" },
   { label: "FAQS", href: "/faqs" },
   { label: "CONTACT", href: "/contact-us" },
 ];
@@ -21,16 +21,7 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (href.startsWith("#")) {
-      const targetElement = typeof document !== "undefined" ? document.querySelector(href) : null;
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      } else {
-        router.push(`/home${href}`);
-      }
-    } else {
-      router.push(href);
-    }
+    router.push(href);
   };
 
   return (
@@ -105,4 +96,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

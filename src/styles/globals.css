@@ -24,6 +24,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* Outline number utility for How It Works steps */
+  .num-outline {
+    -webkit-text-stroke: 2px #C7DAB6;
+    text-stroke: 2px #C7DAB6;
+    color: transparent;
+  }
 }
 
 .how-it-works-bg{

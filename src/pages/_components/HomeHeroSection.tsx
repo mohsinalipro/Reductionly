@@ -9,7 +9,7 @@ const HomeHeroSection = () => {
         <p className="text-lime-300 font-semibold mb-2 md:text-lg">
           SMARTER STUDENT LOAN SOLUTIONS. REAL RESULTS.
         </p>
-        <h1 className="text-[40px] md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 md:mb-4 text-[#F8FDE9]">
+        <h1 className="text-[40px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-4 text-[#F8FDE9]">
           TAKE CONTROL OF YOUR STUDENT LOANS TODAY
         </h1>
         <p className="mb-5 md:mb-6 text-[#F8FDE9] text-lg">
@@ -30,11 +30,13 @@ const HomeHeroSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:justify-end relative col-span-1 md:col-span-5 h-[450px] md:h-[600px] lg:h-[750px] order-1 md:order-2  -mt-10 md:mt-0">
+      <div className="flex justify-center md:justify-end relative col-span-1 md:col-span-5 h-[450px] md:h-[600px] lg:h-[750px] order-1 md:order-2 -mt-10 md:mt-0">
         <Image
           src={HeroImg}
           alt="Student"
-          className="rounded-lg max-w-[422px] md:max-w-full h-full md:h-[600px] lg:h-[750px] w-full md:absolute md:bottom-0 right-0 mx-auto"
+          fill
+          priority
+          className="object-contain object-bottom md:object-contain rounded-lg"
         />
       </div>
     </section>

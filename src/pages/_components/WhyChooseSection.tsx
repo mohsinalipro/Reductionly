@@ -12,11 +12,13 @@ const features = [
   "Expert Support When You Need It",
 ];
 
-const WhyChooseSection: FC = () => {
+type Props = { title?: string };
+
+const WhyChooseSection: FC<Props> = ({ title = "WHY CHOOSE REDUCTIONLY" }) => {
   return (
     <section className="bg-[#F2F8ED] py-12 md:py-28 lg:py-32 text-center rounded-t-[40px] -mt-5 md:-mt-14 xl:-mt-20 relative z-30 px-8 md:mx-3">
       <h2 className="text-[36px] md:text-[44px] font-semibold leading-[115%] text-[#062014] mb-8">
-        WHY CHOOSE REDUCTIONLY
+        {title}
       </h2>
 
       <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">

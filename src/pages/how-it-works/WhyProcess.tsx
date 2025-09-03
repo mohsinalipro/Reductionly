@@ -4,15 +4,14 @@ import TickIcon from "../../_assets/svgs/tick.svg";
 
 const pills = [
   "Quick, Step-by-Step Process",
-  "No Confusion — Clear Guidance",
-  "Real Control Over Your Payments",
-  "Designed to Save You Money",
-  "Independent — Compare Options",
+  "No Sales Pressure — Just Solutions",
+  "Real Experts Behind the Software",
+  "Designed to Save You Time and Money",
 ];
 
 export default function WhyProcess() {
   return (
-    <section className="bg-[#00391F] text-white pt-14 pb-16 md:pb-24">
+    <section className="relative bg-[#004725] text-white pt-14 md:pt-16 pb-16 md:rounded-t-[54px] overflow-hidden -mt-16 md:-mt-24">
       <div className="max-w-screen-xl mx-auto px-5">
         <h2 className="text-center text-[36px] md:text-[44px] font-semibold mb-8 md:mb-12">WHY OUR PROCESS WORKS</h2>
 
@@ -26,6 +25,12 @@ export default function WhyProcess() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-center max-w-4xl mx-auto text-[19px] md:text-lg leading-7 opacity-95">
+          Whether you're looking to lower your monthly payment, get out of default,
+          or just understand your options, Reductionly gives you the tools you need
+          to take back control.
+        </p>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ const ContactHero: FC = () => {
           CONTACT US
         </p>
 
-        <h1 className="text-3xl leading-[115%] md:text-5xl lg:text-[64px] font-extrabold mb-3 md:mb-6 text-[#F8FDE9]">
+        <h1 className="text-3xl leading-[115%] md:text-5xl lg:text-[64px] mb-3 md:mb-6 text-[#F8FDE9]">
           WE’RE HERE TO HELP <br className="hidden md:block" /> YOU SUCCEED
         </h1>
 
