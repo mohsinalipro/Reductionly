@@ -1,13 +1,19 @@
 "use client";
 import { FC } from "react";
 import Image from "next/image";
-import BgImg from "../../_assets/pngs/get-started-bg.png"
+import BgImg from "../../_assets/pngs/get-started-bg.png";
 import GlobalBtn from "./GlobalBtn";
-import CardImg1 from "../../_assets/pngs/profile-mock-img-1.png"
-import CardImg2 from "../../_assets/pngs/profile-mock-img-2.png"
-import CardImg3 from "../../_assets/pngs/profile-mock-img-3.png"
-import CardImg4 from "../../_assets/pngs/profile-mock-img-4.png"
-import CardImg5 from "../../_assets/pngs/profile-mock-img-5.png"
+import CardImg1 from "../../_assets/pngs/profile-mock-img-1.png";
+import CardImg2 from "../../_assets/pngs/profile-mock-img-2.png";
+import CardImg3 from "../../_assets/pngs/profile-mock-img-3.png";
+import CardImg4 from "../../_assets/pngs/profile-mock-img-4.png";
+import CardImg5 from "../../_assets/pngs/profile-mock-img-5.png";
+
+type GetStartedSectionProps = {
+  title?: string;
+  description?: string;
+  contentWidth?: string
+};
 
 const testimonials = [
   {
@@ -47,32 +53,43 @@ const testimonials = [
   },
 ];
 
-const GetStartedSection: FC = () => {
+const GetStartedSection: FC<GetStartedSectionProps> = ({
+  title = "READY TO GET STARTED?",
+  description = "Don’t let student debt hold you back another day. Start your journey toward financial freedom with Reductionly today.",
+  contentWidth = "382px"
+}) => {
   return (
-    <div style={{
-      backgroundImage: `url("${BgImg.src}")`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
-      <div className="relative md:w-[70%] mx-auto min-h-[600px] md:min-h-[800px] lg:min-h-[800px] text-center py-20 overflow-hidden flex justify-center items-center px-5">
-        <div className="relative z-10 text-[#F8FDE9] max-w-[382px]">
+    <div
+      style={{
+        backgroundImage: `url("${BgImg.src}")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="relative md:w-[70%] mx-auto min-h-[600px] md:min-h-[800px] lg:min-h-[800px] text-center py-20 overflow-hidden flex justify-center items-center">
+        <div
+          className="relative z-10 text-[#F8FDE9]"
+          style={{ maxWidth: contentWidth }}
+        >
           <h2 className="text-[36px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px]">
-            READY TO GET STARTED?
+            {title}
           </h2>
-          <p className="text-[19px] md:text-lg leading-6 md:leading-7 max-w-md mx-auto mb-6">
-            Don’t let student debt hold you back another day.
-            Start your journey toward financial freedom with Reductionly today.
+          <p className="text-[19px] md:text-lg leading-6 md:leading-7 max-w-md mx-auto mb-6 px-5">
+            {description}
           </p>
           <GlobalBtn
-            className='h-14 mx-auto w-[70%] md:w-[156px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 uppercase font-semibold shadow-[5px_5px_0px_#062014]'
-            text='GET STARTED'
+            className="h-14 mx-auto w-[70%] md:w-[156px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 uppercase font-semibold shadow-[5px_5px_0px_#062014]"
+            text="GET STARTED"
           />
         </div>
 
         {testimonials.map((t) => (
           <div
             key={t.id}
-            className={`absolute p-2 md:p-3 rounded-full border-t-[1px] border-[#3C574F] ${t.position} ${t.text ? "bg-[linear-gradient(180deg,rgba(14,12,24,0.5)_0%,rgba(14,12,24,0.4)_100%)]" : ""} flex items-center gap-2`}
+            className={`absolute p-2 md:p-3 rounded-full border-t-[1px] border-[#3C574F] ${t.position} ${t.text
+                ? "bg-[linear-gradient(180deg,rgba(14,12,24,0.5)_0%,rgba(14,12,24,0.4)_100%)]"
+                : ""
+              } flex items-center gap-2`}
           >
             <div className="w-[27px] h-[27px] md:w-11 md:h-11 rounded-full overflow-hidden border-2 border-white">
               <Image src={t.img} alt={t.name} className="w-full" />
@@ -85,7 +102,9 @@ const GetStartedSection: FC = () => {
                 <div className="font-bold text-[9px] md:text-base leading-[10px]">
                   {t.text}
                 </div>
-                <span className="text-[9px] md:text-base opacity-55 leading-[10px]">{t.name}</span>
+                <span className="text-[9px] md:text-base opacity-55 leading-[10px]">
+                  {t.name}
+                </span>
               </div>
             )}
           </div>

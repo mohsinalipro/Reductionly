@@ -34,12 +34,12 @@ const Navbar = () => {
           <Image src={Logo} alt="Brand Logo" className="w-28 md:w-32 lg:w-[160px]" />
         </div>
 
-        <div className="hidden md:flex space-x-6 items-center">
+        <div className="hidden md:flex md:space-x-6 lg:space-x-8 items-center">
           {navItems.map((item) => (
             <button
               key={item.label}
               onClick={() => handleNavClick(item.href)}
-              className="hover:text-green-300 transition text-sm"
+              className="hover:text-[#BADA50] transition text-sm font-semibold"
             >
               {item.label}
             </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
             <button
               key={item.label}
               onClick={() => handleNavClick(item.href)}
-              className="hover:text-green-300 transition text-base"
+              className="hover:text-[#BADA50] transition text-base font-semibold"
             >
               {item.label}
             </button>

@@ -59,7 +59,7 @@ const steps: Step[] = [
 const HowItWorks: FC = () => {
   return (
     <section className="relative bg-[#00391F] text-white pt-14 md:pt-16 pb-16 md:rounded-t-[54px] overflow-hidden -mt-16 md:-mt-24">
-      <h2 className="text-center text-[36px] md:text-[44px] text-[#F8FDE9] font-semibold mb-10 md:mb-12 lg:mb-16">
+      <h2 className="text-center text-[36px] leading-[115%] md:text-[44px] text-[#F8FDE9] font-semibold mb-10 md:mb-12 lg:mb-16">
         HOW REDUCTIONLY WORKS
       </h2>
       <div className={`w-full how-it-works-bg bg-cover bg-top bg-no-repeat`}>

@@ -5,6 +5,7 @@ import ProcessSteps from "./Steps";
 import WhyProcess from "./WhyProcess";
 import CircleCta from "./CircleCta";
 import HeroBg from "../../_assets/pngs/hero-bg.png";
+import GetStartedSection from "../_components/GetStartedSection";
 
 export default function HowItWorksPage() {
   return (
@@ -23,7 +24,7 @@ export default function HowItWorksPage() {
         <ProcessSteps />
       </div>
       <WhyProcess />
-      <CircleCta />
+      <GetStartedSection contentWidth="476px" title="Ready to Make Your Student Loans Manageable?" description="Take the first step today — it's faster and easier than you think."/>
       <Footer />
     </div>
   );

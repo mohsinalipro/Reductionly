@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
-import HeroImg from "../../_assets/pngs/hero-img.png";
+import HeroImg from "../../_assets/pngs/how-it-works-hero-img.png";
 
 export default function HowItWorksHero() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-9 items-center gap-7 md:gap-10 text-white max-w-screen-xl mx-auto px-5">
-      <div className="col-span-1 md:col-span-4 mb-14 md:mb-0 md:py-10 order-2 md:order-1">
-        <p className="text-lime-300 font-semibold mb-2 md:text-lg">HOW REDUCTIONLY WORKS</p>
+    <section className="grid grid-cols-1 md:grid-cols-9 items-center gap-7 md:gap-10 text-white max-w-screen-xl mx-auto px-5 ">
+      <div className="col-span-1 md:col-span-4 mb-6 md:mb-0 lg:py-10 order-2 md:order-1 text-center md:text-left mt-10 md:mt-0">
+        <p className="text-lime-300 font-semibold mb-2 text-lg">HOW REDUCTIONLY WORKS</p>
 
-        <h1 className="text-[40px] md:text-5xl lg:text-6xl font-bold leading-tight mb-3 md:mb-4 text-[#F8FDE9]">
-          STUDENT LOAN
-          <br className="hidden md:block" />
+        <h1 className="text-[32px] md:text-5xl lg:text-[64px] font-bold leading-tight mb-3 md:mb-4 text-[#F8FDE9] lg:whitespace-nowrap">
+          STUDENT LOAN 
+          <br className="hidden md:block" />{" "}
           RELIEF, SIMPLIFIED.
         </h1>
         <p className="mb-5 md:mb-6 text-[#F8FDE9] text-lg">
@@ -20,13 +20,13 @@ export default function HowItWorksHero() {
         </p>
       </div>
 
-      <div className="flex justify-center md:justify-end relative col-span-1 md:col-span-5 h-[450px] md:h-[600px] lg:h-[750px] order-1 md:order-2 -mt-10 md:mt-0">
+      <div className="md:flex justify-center md:justify-end relative col-span-1 md:col-span-5 h-[454px] order-1 md:order-2 -mt-10 md:mt-0 hidden">
         <Image
           src={HeroImg}
           alt="Student"
           fill
           priority
-          className="object-contain object-bottom md:object-contain rounded-lg"
+          className=" w-full rounded-lg "
         />
       </div>
     </section>

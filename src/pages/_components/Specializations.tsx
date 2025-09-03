@@ -42,7 +42,7 @@ const Specializations = () => {
   return (
     <section className="bg-[#F8FDE9] rounded-[50px] pt-20 pb-28">
       <div className="max-w-screen-xl mx-auto px-5 text-center">
-        <h2 className="text-[36px] md:text-[44px] text-[#062014] font-semibold mb-2 md:mb-8 lg:mb-12 md:mt-14">WE SPECIALIZE IN:</h2>
+        <h2 className="text-[32px] leading-[115%] md:text-[44px] text-[#062014] font-semibold mb-2 md:mb-8 lg:mb-12 md:mt-14">WE SPECIALIZE IN:</h2>
         <div className="w-full space-y-10">
           {specializations.map((item, index) => (
             <div

@@ -32,7 +32,7 @@ const WhyChooseSection: FC<Props> = ({ title = "WHY CHOOSE REDUCTIONLY" }) => {
         ))}
       </div>
 
-      <p className="mt-8 text-[#062014] text-[19px] md:text-lg max-w-5xl font-semibold mx-auto leading-7">
+      <p className="mt-8 text-[#062014] text-[19px] md:text-lg max-w-5xl font-semibold mx-auto leading-[153%]">
         Whether you&apos;re looking to lower your monthly payment, get out of default,
         or just understand your options, Reductionly gives you the tools you need
         to take back control.
