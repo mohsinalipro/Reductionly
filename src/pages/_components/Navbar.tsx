@@ -77,29 +77,31 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {isOpen && (
-        <div className="absolute top-16 left-0 w-full flex flex-col items-center space-y-6 px-6 py-6 bg-[#004725] md:hidden">
-          {navItems.map((item) => (
-            <button
-              key={item.label}
-              onClick={() => handleNavClick(item.href)}
-              className="hover:text-[#BADA50] transition text-base font-semibold"
-            >
-              {item.label}
-            </button>
-          ))}
-          <div className="flex gap-2 flex-wrap">
-            <GlobalBtn
-              className="h-12 w-[135px] bg-[#F8FDE9] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
-              text="GET STARTED"
-            />
-            <GlobalBtn
-              className="h-12 w-[98px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
-              text="Login"
-            />
-          </div>
+      <div
+        aria-hidden={!isOpen}
+        className={`absolute top-16 left-0 w-full flex flex-col items-center space-y-6 px-6 py-6 bg-[#004725] md:hidden transition-all duration-300 ease-out transform
+          ${isOpen ? "opacity-100 translate-y-0 visible pointer-events-auto" : "opacity-0 -translate-y-4 invisible pointer-events-none"}`}
+      >
+        {navItems.map((item) => (
+          <button
+            key={item.label}
+            onClick={() => handleNavClick(item.href)}
+            className="hover:text-[#BADA50] transition text-base font-semibold"
+          >
+            {item.label}
+          </button>
+        ))}
+        <div className="flex gap-2 flex-wrap">
+          <GlobalBtn
+            className="h-12 w-[135px] bg-[#F8FDE9] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+            text="GET STARTED"
+          />
+          <GlobalBtn
+            className="h-12 w-[98px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+            text="Login"
+          />
         </div>
-      )}
+      </div>
     </div>
   );
 };

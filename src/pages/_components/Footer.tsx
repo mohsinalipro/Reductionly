@@ -5,6 +5,7 @@ import Logo from "../../_assets/svgs/logo.svg"
 import PhoneIcon from "../../_assets/svgs/phone-icon.svg"
 import MailIcon from "../../_assets/svgs/mail-icon.svg"
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Footer: FC = () => {
   const router = useRouter();
@@ -27,18 +28,18 @@ const Footer: FC = () => {
         <div className=" col-span-1 md:col-auto">
           <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 RightGrotesk">MENU</h4>
           <ul className="space-y-4 text-sm text-[#F8FDE9]">
-            <li>HOME</li>
-            <li>HOW IT WORKS</li>
-            <li>ABOUT US</li>
-            <li>FAQ</li>
+            <li><Link href="/home">HOME</Link></li>
+            <li><Link href="/how-it-works">HOW IT WORKS</Link></li>
+            <li><Link href="#">ABOUT US</Link></li>
+            <li><Link href="/faqs">FAQ</Link></li>
           </ul>
         </div>
 
         <div className=" col-span-1 md:col-auto">
           <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 RightGrotesk">OTHER LINKS</h4>
           <ul className="space-y-4 text-sm text-[#F8FDE9]">
-            <li>PRIVACY POLICY</li>
-            <li>TERMS & CONDITIONS</li>
+            <li><Link href="#">PRIVACY POLICY</Link></li>
+            <li><Link href="#">TERMS & CONDITIONS</Link></li>
           </ul>
         </div>
 

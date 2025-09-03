@@ -59,7 +59,7 @@ const Specializations = () => {
                 />
               </div>
 
-              <div className={`relative flex flex-1 justify-center ${index % 2 === 1 ? "md:justify-start" : "md:justify-end"}`}>
+              <div className={`relative flex flex-1 justify-center ${index % 2 === 1 ? "md:justify-start" : "md:justify-end"} transform transition-transform duration-200 ease-out hover:scale-[1.02]`}>
                 <Image
                   src={item.image}
                   alt={item.title}
