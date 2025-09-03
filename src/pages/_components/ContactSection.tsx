@@ -10,10 +10,10 @@ const ContactSection: FC = () => {
     <section className="bg-[#F8FDE9] pt-12 md:pt-16 pb-16 md:pb-28 px-6 rounded-t-[40px] md:rounded-t-[50px] md:mx-3 text-[#062014]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 lg:gap-12">
         <div className="md:mt-10 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight mb-6 leading-snug">
+          <h2 className="text-[36px] md:text-[44px] font-semibold tracking-tight mb-6 leading-snug">
             GOT A QUESTION? <br /> NEED HELP GETTING STARTED?
           </h2>
-          <p className="text-base md:text-lg md:leading-6 mb-4 md:mb-10 max-w-[442px] mx-auto md:mx-0">
+          <p className="text-[19px] md:text-lg leading-6 md:leading-7 mb-4 md:mb-10 max-w-[442px] mx-auto md:mx-0">
             Whether you’re exploring your repayment options or you’re already
             working with Reductionly, our team is ready to support you every
             step of the way.

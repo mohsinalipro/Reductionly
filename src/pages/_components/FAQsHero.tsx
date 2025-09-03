@@ -9,11 +9,11 @@ const FAQsHero: FC = () => {
           FAQs
         </p>
 
-        <h1 className="text-3xl leading-[115%] md:text-5xl lg:text-[64px] font-extrabold mb-3 md:mb-6 text-[#F8FDE9]">
-          Your Student Loan Questions, Answered
-        </h1>
 
-        <p className="text-base md:text-lg text-[#F8FDE9]">
+        <h2 className="text-[36px] md:text-[44px] font-semibold leading-[115%] text-[#F8FDE9] mb-8">
+            YOUR STUDENT LOAN QUESTIONS, ANSWERED
+        </h2>
+        <p className="md:text-lg text-[#F8FDE9] text-[19px]">
           At Reductionly, we believe the more you know, the more confident you’ll feel about managing your student loans. Here are answers to the most common questions we get
         </p>
       </div>

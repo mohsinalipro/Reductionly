@@ -13,7 +13,7 @@ const ContactHero: FC = () => {
           WE’RE HERE TO HELP <br className="hidden md:block" /> YOU SUCCEED
         </h1>
 
-        <p className="text-base md:text-lg text-[#F8FDE9]">
+        <p className="text-[19px] md:text-lg text-[#F8FDE9] leading-6 md:leading-7">
           Reach out — we’re here to make student loan management easier, faster,
           and stress-free.
         </p>

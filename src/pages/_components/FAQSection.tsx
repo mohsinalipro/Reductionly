@@ -87,7 +87,7 @@ const FAQSection = () => {
               </span>
             </button>
             {openIndex === index && (
-              <div className="pb-5 text-[#062014] text-base md:text-lg leading-relaxed whitespace-pre-line">
+              <div className="pb-5 text-[#062014] text-[19px] md:text-lg leading-7 whitespace-pre-line">
                 {faq.answer}
               </div>
             )}
@@ -105,7 +105,7 @@ const FAQSection = () => {
             <p className="text-base md:text-xl uppercase tracking-wide mb-3">
               OUR TEAM IS HERE TO HELP!
             </p>
-            <h2 className="text-3xl md:text-[44px] font-bold mb-6 md:mb-4">
+            <h2 className="text-[36px] md:text-[44px] font-semibold mb-6 md:mb-4">
               STILL HAVE QUESTIONS?
             </h2>
             <p className="text-base">

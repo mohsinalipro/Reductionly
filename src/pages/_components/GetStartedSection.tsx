@@ -56,10 +56,10 @@ const GetStartedSection: FC = () => {
     }}>
       <div className="relative md:w-[70%] mx-auto min-h-[600px] md:min-h-[800px] lg:min-h-[800px] text-center py-20 overflow-hidden flex justify-center items-center px-5">
         <div className="relative z-10 text-[#F8FDE9] max-w-[382px]">
-          <h2 className="text-[32px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px]">
+          <h2 className="text-[36px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px]">
             READY TO GET STARTED?
           </h2>
-          <p className="max-w-md mx-auto mb-6">
+          <p className="text-[19px] md:text-lg leading-6 md:leading-7 max-w-md mx-auto mb-6">
             Don’t let student debt hold you back another day.
             Start your journey toward financial freedom with Reductionly today.
           </p>
