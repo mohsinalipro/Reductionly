@@ -24,7 +24,7 @@ const WhyChooseSection: FC<Props> = ({ title = "WHY CHOOSE REDUCTIONLY" }) => {
       <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">
         {features.map((feature, index) => (
           <div key={index} className="basis-full md:basis-auto">
-            <div className="inline-flex items-center gap-2 bg-[#004725] text-white px-4 md:px-5 py-3 md:py-3 rounded-full text-base md:text-lg font-semibold mx-auto">
+            <div className="inline-flex items-center gap-2 bg-[#004725] text-white px-4 md:px-5 py-3 md:py-3 rounded-full text-base md:text-lg font-semibold mx-auto transition-all hover:scale-[1.02] hover:bg-[#0A5A36]">
               <Image src={TickIcon} alt="" className="w-6 md:w-7" />
               {feature}
             </div>

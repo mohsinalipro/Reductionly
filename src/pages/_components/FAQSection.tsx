@@ -74,6 +74,8 @@ const FAQSection = () => {
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center py-8 text-left"
+              aria-expanded={openIndex === index}
+              aria-controls={`faq-panel-${index}`}
             >
               <span className="font-semibold text-lg md:text-xl uppercase tracking-wide text-[#062014]">
                 {faq.question}
@@ -86,11 +88,14 @@ const FAQSection = () => {
                 )}
               </span>
             </button>
-            {openIndex === index && (
+            <div
+              id={`faq-panel-${index}`}
+              className={`${openIndex === index ? 'max-h-[600px] opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-1 pointer-events-none'} overflow-hidden transition-all duration-300 ease-out`}
+            >
               <div className="pb-5 text-[#062014] text-[19px] md:text-lg leading-7 whitespace-pre-line">
                 {faq.answer}
               </div>
-            )}
+            </div>
           </div>
         ))}
 

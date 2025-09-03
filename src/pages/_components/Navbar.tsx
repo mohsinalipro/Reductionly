@@ -58,13 +58,22 @@ const Navbar = () => {
 
         <button
           className="md:hidden text-white"
+          aria-expanded={isOpen}
+          aria-label="Toggle menu"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? (
-            <Image src={CancelIcon} alt="close menu" className="w-6" />
-          ) : (
-            <Image src={MenuIcon} alt="open menu" />
-          )}
+          <span className="relative block w-6 h-6">
+            <Image
+              src={MenuIcon}
+              alt="open menu"
+              className={`absolute inset-0 w-6 h-6 transition-all duration-200 ease-out ${isOpen ? 'opacity-0 scale-90 rotate-90' : 'opacity-100 scale-100 rotate-0'}`}
+            />
+            <Image
+              src={CancelIcon}
+              alt="close menu"
+              className={`absolute inset-0 w-6 h-6 transition-all duration-200 ease-out ${isOpen ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 -rotate-90 scale-90'}`}
+            />
+          </span>
         </button>
       </nav>
 
@@ -81,11 +90,11 @@ const Navbar = () => {
           ))}
           <div className="flex gap-2 flex-wrap">
             <GlobalBtn
-              className="h-12 w-[135px] bg-[#F8FDE9] text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+              className="h-12 w-[135px] bg-[#F8FDE9] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
               text="GET STARTED"
             />
             <GlobalBtn
-              className="h-12 w-[98px] bg-[#BADA50] text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
+              className="h-12 w-[98px] bg-[#BADA50] !text-[#062014] justify-center rounded-xl text-center text-sm md:h-12 md:max-w-[148px] uppercase font-semibold"
               text="Login"
             />
           </div>

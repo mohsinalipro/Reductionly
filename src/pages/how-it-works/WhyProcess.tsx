@@ -18,7 +18,7 @@ export default function WhyProcess() {
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">
           {pills.map((p, i) => (
             <div key={i} className="basis-full md:basis-auto">
-              <div className="inline-flex items-center gap-2 bg-[#0D4C2E] text-white px-4 md:px-5 py-3 rounded-full text-base md:text-lg font-semibold mx-auto">
+              <div className="inline-flex items-center gap-2 bg-[#0D4C2E] text-white px-4 md:px-5 py-3 rounded-full text-base md:text-lg font-semibold mx-auto transition-all hover:scale-[1.02] hover:bg-[#0A5A36]">
                 <Image src={TickIcon} alt="" className="w-6 md:w-7" />
                 {p}
               </div>
@@ -35,4 +35,3 @@ export default function WhyProcess() {
     </section>
   );
 }
-

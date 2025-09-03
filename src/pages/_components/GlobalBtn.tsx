@@ -25,7 +25,7 @@ const GlobalBtn: React.FC<GlobalBtnProps> = ({
   type = 'button',
 }) => {
   const defaultBtnClass =
-    'flex items-center gap-2 px-4 py-2 rounded-md transition text-white disabled:opacity-50'
+    'flex items-center gap-2 px-4 py-2 rounded-md transition text-white disabled:opacity-50 transition-transform duration-200 ease-out hover:-translate-y-0.5 active:scale-[0.98]'
   const finalBtnClass = `${defaultBtnClass} ${className}`.trim()
   const finalTextClass = `${textClassName}`.trim()
 

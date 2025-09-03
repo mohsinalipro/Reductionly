@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import Logo from "../../_assets/svgs/logo.svg"
 import PhoneIcon from "../../_assets/svgs/phone-icon.svg"
@@ -26,18 +27,18 @@ const Footer: FC = () => {
         <div className="col-span-1 min-w-[220px]">
           <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 uppercase tracking-wide">MENU</h4>
           <ul className="space-y-4 text-base text-[#F8FDE9]">
-            <li className="cursor-pointer" onClick={() => router.push("/home")}>HOME</li>
-            <li className="cursor-pointer" onClick={() => router.push("/how-it-works")}>HOW IT WORKS</li>
-            <li className="cursor-pointer">ABOUT US</li>
-            <li className="cursor-pointer" onClick={() => router.push("/faqs")}>FAQ</li>
+            <li><Link href="/home">HOME</Link></li>
+            <li><Link href="/how-it-works">HOW IT WORKS</Link></li>
+            <li><Link href="#">ABOUT US</Link></li>
+            <li><Link href="/faqs">FAQ</Link></li>
           </ul>
         </div>
 
         <div className="col-span-1 min-w-[220px]">
           <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 uppercase tracking-wide">OTHER LINKS</h4>
           <ul className="space-y-4 text-base text-[#F8FDE9]">
-            <li>PRIVACY POLICY</li>
-            <li>TERMS & CONDITIONS</li>
+            <li><Link href="#">PRIVACY POLICY</Link></li>
+            <li><Link href="#">TERMS & CONDITIONS</Link></li>
           </ul>
         </div>
 
@@ -49,11 +50,11 @@ const Footer: FC = () => {
             </li>
             <li className="flex items-center gap-3">
               <Image src={PhoneIcon} alt="" className="w-5 h-5" />
-              +088 (246) 642-27-10
+              <a href="tel:+0882466422710">+088 (246) 642-27-10</a>
             </li>
             <li className="flex items-center gap-3">
               <Image src={MailIcon} alt="" className="w-5 h-5" />
-              support@reductionly.com
+              <a href="mailto:support@reductionly.com">support@reductionly.com</a>
             </li>
           </ul>
         </div>

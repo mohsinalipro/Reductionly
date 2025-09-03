@@ -81,7 +81,7 @@ const HowItWorks: FC = () => {
                 </div>
 
                 <div
-                  className={` relative rounded-xl shadow-xl max-w-[300px] lg:max-w-[330px] transform ${index % 2 === 0 ? "md:translate-x-[20%]" : "md:-translate-x-[20%]"
+                  className={` relative rounded-xl shadow-xl max-w-[300px] lg:max-w-[330px] transform transition-transform duration-200 ease-out hover:scale-[1.02] ${index % 2 === 0 ? "md:translate-x-[20%]" : "md:-translate-x-[20%]"
                     }`}
                 >
                   <div className={`hidden md:block absolute ${index == 0 ? "-top-[18%] -right-[25%]" : index == 1 ? "-top-[10%] -left-[19%]":  index == 2 ? "-top-[20%] -right-[25%]":  index == 3 && "-bottom-[20%] -left-[27%]"}`}>
