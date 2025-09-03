@@ -27,7 +27,7 @@ body {
   /* Outline number utility for How It Works steps */
   .num-outline {
     -webkit-text-stroke: 2px #C7DAB6;
-    text-stroke: 2px #C7DAB6;
+    /* text-stroke is non-standard; omit for IDE compatibility */
     color: transparent;
   }
 }
@@ -46,12 +46,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Base heading and link styles */
-@layer base {
-  h2 { @apply px-7 md:px-0; }
-  a { @apply transition-colors duration-200; }
-  a:hover { @apply text-green-300; }
+/* Base heading and link styles (no @apply to avoid IDE warnings) */
+h2 { padding-left: 1.75rem; padding-right: 1.75rem; }
+@media (min-width: 768px) {
+  h2 { padding-left: 0; padding-right: 0; }
 }
+a { transition: color 200ms ease; }
+a:hover { color: #86efac; /* tailwind green-300 */ }
 
 @layer utilities {
   /* Animation keyframes */
