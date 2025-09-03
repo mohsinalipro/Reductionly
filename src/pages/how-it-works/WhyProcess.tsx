@@ -13,7 +13,7 @@ export default function WhyProcess() {
   return (
     <section className="relative bg-[#004725] text-[#F8FDE9] pt-14 md:pt-16 pb-16 md:pb-20 rounded-t-[54px] overflow-hidden -mt-16 md:-mt-24 shadow-[0_20px_40px_#004725]">
       <div className="max-w-screen-xl mx-auto px-5">
-        <h2 className="text-center text-[32px] md:text-[44px] font-semibold mb-7 md:mb-10 leading-[115%]">WHY OUR PROCESS WORKS</h2>
+        <h2 className="text-center text-[32px] md:text-[44px] font-semibold mb-7 md:mb-10 leading-[115%] RightGrotesk">WHY OUR PROCESS WORKS</h2>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-5 max-w-5xl mx-auto">
           {pills.map((p, i) => (

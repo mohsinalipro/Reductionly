@@ -52,7 +52,7 @@ export default function ProcessSteps() {
   return (
     <section className="bg-[#F8FDE9] rounded-t-[50px] pt-[50px] md:pt-16 lg:pt-20 pb-20">
       <div className="max-w-screen-xl mx-auto px-5">
-        <div className="text-center text-[32px] md:text-[44px] leading-[115%] font-semibold text-[#062014] ">
+        <div className="text-center text-[32px] md:text-[44px] leading-[115%] font-semibold text-[#062014] RightGrotesk">
           HERE’S HOW OUR SIMPLE, STEP-
           <br className="hidden md:block" />
           BY-STEP PROCESS WORKS:
@@ -64,8 +64,8 @@ export default function ProcessSteps() {
               <div className="h-px bg-[#004725] w-full mx-auto mb-8 md:mb-14 lg:mb-20 opacity-35" />
               <div className="md:flex justify-between gap-6 md:gap-10 items-start">
                 <div className="text-center md:text-left md:pb-4">
-                  <div className="text-[90px] font-bold text-[#062014] num-outline leading-[88%] mb-7 md:mb-10">{s.id}</div>
-                  <h3 className="text-2xl md:text-[28px] lg:text-[32px] leading-7 md:leading-8 font-bold text-[#062014] md:max-w-xs uppercase tracking-wide max-w-[406px] mx-auto md:mx-auto md:w-[406px]">
+                  <div className="text-[90px] font-bold text-[#062014] num-outline leading-[88%] mb-7 md:mb-10 RightGrotesk">{s.id}</div>
+                  <h3 className="text-2xl md:text-[28px] lg:text-[32px] leading-7 md:leading-8 font-bold text-[#062014] md:max-w-xs uppercase tracking-wide max-w-[406px] mx-auto md:mx-auto md:w-[406px] RightGrotesk">
                     {s.heading}
                   </h3>
                   <div className="h-px bg-[#004725] w-full mx-auto my-9 md:hidden opacity-35" />

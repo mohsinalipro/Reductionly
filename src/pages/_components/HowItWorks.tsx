@@ -59,7 +59,7 @@ const steps: Step[] = [
 const HowItWorks: FC = () => {
   return (
     <section className="relative bg-[#00391F] text-white pt-14 md:pt-16 pb-16 md:rounded-t-[54px] overflow-hidden -mt-16 md:-mt-24">
-      <h2 className="text-center text-[36px] leading-[115%] md:text-[44px] text-[#F8FDE9] font-semibold mb-10 md:mb-12 lg:mb-16">
+      <h2 className="text-center text-[36px] leading-[115%] md:text-[44px] text-[#F8FDE9] font-semibold mb-10 md:mb-12 lg:mb-16 RightGrotesk">
         HOW REDUCTIONLY WORKS
       </h2>
       <div className={`w-full how-it-works-bg bg-cover bg-top bg-no-repeat`}>
@@ -74,7 +74,7 @@ const HowItWorks: FC = () => {
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 rounded-full items-center justify-center text-white">
                   <div className="relative">
                     <Image src={NumCircle} alt="" className={`w-[120px] lg:w-[200px] ${index % 2 !== 0 && "rotate-180"}`} />
-                    <div className=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 leading-0 text-2xl lg:text-[32px] text-[#062014] !font-bold">
+                    <div className=" absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 leading-0 text-2xl lg:text-[32px] text-[#062014] !font-bold RightGrotesk">
                       {step.id}
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const HowItWorks: FC = () => {
                     </div>
                   </div>
                   <div className="bg-[#F8FDE9] p-4 text-[#062014] rounded-[20px]">
-                    <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 RightGrotesk">{step.title}</h3>
                     <p className="text-base">{step.description}</p>
                   </div>
                 </div>

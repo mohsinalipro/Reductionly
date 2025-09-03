@@ -10,7 +10,7 @@ const ContactSection: FC = () => {
     <section className="bg-[#F8FDE9] pt-12 md:pt-16 pb-16 md:pb-28 px-6 rounded-t-[40px] md:rounded-t-[50px] md:mx-3 text-[#062014]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 lg:gap-12">
         <div className="md:mt-10 text-center md:text-left">
-          <h2 className="text-[36px] md:text-[44px] font-semibold tracking-tight mb-6 leading-snug">
+          <h2 className="text-[36px] md:text-[44px] font-semibold tracking-tight mb-6 leading-snug RightGrotesk">
             GOT A QUESTION? <br /> NEED HELP GETTING STARTED?
           </h2>
           <p className="text-[19px] md:text-lg leading-6 md:leading-7 mb-4 md:mb-10 max-w-[442px] mx-auto md:mx-0">
@@ -24,7 +24,7 @@ const ContactSection: FC = () => {
                 <Image src={MailIcon} alt="Mail Icon" />
               </div>
               <div>
-                <p className="font-semibold text-xl">EMAIL US</p>
+                <p className="font-semibold text-xl RightGrotesk">EMAIL US</p>
                 <p className="text-[#062014] text-sm mb-1">
                   Prefer email? No problem
                 </p>
@@ -40,7 +40,7 @@ const ContactSection: FC = () => {
                 <Image src={PhoneIcon} alt="Phone Icon" />
               </div>
               <div>
-                <p className="font-semibold">CALL US</p>
+                <p className="font-semibold text-xl RightGrotesk">CALL US</p>
                 <p className="text-[#062014] text-sm mb-1">
                   Speak directly with a student loan expert.
                 </p>
@@ -60,7 +60,7 @@ const ContactSection: FC = () => {
           </p>
           <form className="space-y-4">
             <div>
-              <label className="text-base md:text-xl font-semibold block mb-2">
+              <label className="text-base md:text-xl RightGrotesk font-semibold block mb-2">
                 FULL NAME
               </label>
               <input
@@ -69,7 +69,7 @@ const ContactSection: FC = () => {
               />
             </div>
             <div>
-              <label className="text-base md:text-xl font-semibold block mb-2">
+              <label className="text-base md:text-xl RightGrotesk font-semibold block mb-2">
                 EMAIL ADDRESS
               </label>
               <input
@@ -78,7 +78,7 @@ const ContactSection: FC = () => {
               />
             </div>
             <div>
-              <label className="text-base md:text-xl font-semibold block mb-2">
+              <label className="text-base md:text-xl RightGrotesk font-semibold block mb-2">
                 PHONE NUMBER
               </label>
               <input
@@ -87,7 +87,7 @@ const ContactSection: FC = () => {
               />
             </div>
             <div>
-              <label className="text-base md:text-xl font-semibold block mb-2">
+              <label className="text-base md:text-xl RightGrotesk font-semibold block mb-2">
                 HOW CAN WE HELP?
               </label>
               <textarea

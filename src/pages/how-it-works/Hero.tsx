@@ -6,9 +6,9 @@ export default function HowItWorksHero() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-9 items-center gap-7 md:gap-10 text-white max-w-screen-xl mx-auto px-5 ">
       <div className="col-span-1 md:col-span-4 mb-6 md:mb-0 lg:py-10 order-2 md:order-1 text-center md:text-left mt-10 md:mt-0">
-        <p className="text-lime-300 font-semibold mb-2 text-lg">HOW REDUCTIONLY WORKS</p>
+        <p className="text-lime-300 font-semibold mb-2 text-lg RightGrotesk">HOW REDUCTIONLY WORKS</p>
 
-        <h1 className="text-[32px] md:text-5xl lg:text-[64px] font-bold leading-tight mb-3 md:mb-4 text-[#F8FDE9] lg:whitespace-nowrap">
+        <h1 className="text-[32px] md:text-5xl lg:text-[64px] font-bold leading-tight mb-3 md:mb-4 text-[#F8FDE9] lg:whitespace-nowrap RightGrotesk">
           STUDENT LOAN 
           <br className="hidden md:block" />{" "}
           RELIEF, SIMPLIFIED.

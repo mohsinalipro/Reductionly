@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/fonts/RightGrotesk-WideMedium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-inter: "Inter", sans-serif;
+  --font-Grotesk: "RightGrotesk", sans-serif;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,7 +32,8 @@
 body {
   color: var(--foreground);
   background: #004725;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  
 }
 
 @layer utilities {
@@ -26,7 +42,7 @@ body {
   }
   /* Outline number utility for How It Works steps */
   .num-outline {
-    -webkit-text-stroke: 2px #C7DAB6;
+    -webkit-text-stroke: 2px #062014;
     /* text-stroke is non-standard; omit for IDE compatibility */
     color: transparent;
   }
@@ -84,4 +100,12 @@ a:hover { color: #86efac; /* tailwind green-300 */ }
     .animate-slide-down,
     .animate-scale-in { animation: none !important; }
   }
+}
+
+.inter{
+  font-family: var(--font-inter); 
+}
+
+.RightGrotesk{
+  font-family: var(--font-Grotesk);
 }

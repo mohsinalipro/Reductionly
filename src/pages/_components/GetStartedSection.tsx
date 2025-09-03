@@ -71,7 +71,7 @@ const GetStartedSection: FC<GetStartedSectionProps> = ({
           className="relative z-10 text-[#F8FDE9]"
           style={{ maxWidth: contentWidth }}
         >
-          <h2 className="text-[36px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px]">
+          <h2 className="text-[36px] md:text-[44px] font-semibold mb-4 leading-[34px] md:leading-[48px] RightGrotesk">
             {title}
           </h2>
           <p className="text-[19px] md:text-lg leading-6 md:leading-7 max-w-md mx-auto mb-6 px-5">

@@ -25,7 +25,7 @@ const Footer: FC = () => {
 
         <div className="hidden lg:block"></div>
         <div className=" col-span-1 md:col-auto">
-          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6">MENU</h4>
+          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 RightGrotesk">MENU</h4>
           <ul className="space-y-4 text-sm text-[#F8FDE9]">
             <li>HOME</li>
             <li>HOW IT WORKS</li>
@@ -35,7 +35,7 @@ const Footer: FC = () => {
         </div>
 
         <div className=" col-span-1 md:col-auto">
-          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6">OTHER LINKS</h4>
+          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 RightGrotesk">OTHER LINKS</h4>
           <ul className="space-y-4 text-sm text-[#F8FDE9]">
             <li>PRIVACY POLICY</li>
             <li>TERMS & CONDITIONS</li>
@@ -43,7 +43,7 @@ const Footer: FC = () => {
         </div>
 
         <div className="col-span-2 md:col-auto">
-          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6">CONTACT INFO</h4>
+          <h4 className="font-semibold text-[#F8FDE9] mb-4 md:mb-6 RightGrotesk">CONTACT INFO</h4>
           <ul className="space-y-4 text-sm text-[#F8FDE9]">
             <li className="flex items-center gap-2">
               455 West Orchard Street Kings Mountain, NC 280867

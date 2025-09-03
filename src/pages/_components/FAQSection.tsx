@@ -77,7 +77,7 @@ const FAQSection = () => {
               aria-expanded={openIndex === index}
               aria-controls={`faq-panel-${index}`}
             >
-              <span className="font-semibold text-lg md:text-xl uppercase tracking-wide text-[#062014]">
+              <span className="font-semibold text-lg md:text-xl uppercase tracking-wide text-[#062014] RightGrotesk">
                 {faq.question}
               </span>
               <span className="text-xl font-bold text-[#062014]">
@@ -107,10 +107,10 @@ const FAQSection = () => {
           }}
         >
           <div className="max-w-[600px]">
-            <p className="text-base md:text-xl uppercase tracking-wide mb-3">
+            <p className="text-base md:text-xl uppercase tracking-wide mb-3 RightGrotesk">
               OUR TEAM IS HERE TO HELP!
             </p>
-            <h2 className="text-[36px] md:text-[44px] font-semibold mb-6 md:mb-4">
+            <h2 className="text-[36px] md:text-[44px] font-semibold mb-6 md:mb-4 RightGrotesk">
               STILL HAVE QUESTIONS?
             </h2>
             <p className="text-base">

@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-5 relative z-50">
+    <div className="max-w-screen-xl mx-auto px-5 relative z-50 ">
       <nav className="w-full py-7 flex items-center justify-between text-white">
         <div
           className="text-2xl font-bold tracking-wide cursor-pointer"
@@ -39,7 +39,7 @@ const Navbar = () => {
             <button
               key={item.label}
               onClick={() => handleNavClick(item.href)}
-              className="hover:text-[#BADA50] transition text-sm font-semibold"
+              className="hover:text-[#BADA50] transition text-sm font-semibold RightGrotesk"
             >
               {item.label}
             </button>
