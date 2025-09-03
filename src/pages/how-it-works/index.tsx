@@ -3,7 +3,6 @@ import Footer from "@/pages/_components/Footer";
 import HowItWorksHero from "./Hero";
 import ProcessSteps from "./Steps";
 import WhyProcess from "./WhyProcess";
-import CircleCta from "./CircleCta";
 import HeroBg from "../../_assets/pngs/hero-bg.png";
 import GetStartedSection from "../_components/GetStartedSection";
 
