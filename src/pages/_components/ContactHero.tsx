@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const ContactHero: FC = () => {
   return (
-    <section className="relative text-center text-white pt-10 md:pt-28 pb-14 md:pb-32">
+    <section className="relative text-center text-white pt-10 md:pt-28 pb-14 md:pb-28">
       <div className="max-w-4xl mx-auto px-6">
         <p className="text-[#BADA50] font-semibold mb-3 md:mb-6 uppercase tracking-wide RightGrotesk">
           CONTACT US
