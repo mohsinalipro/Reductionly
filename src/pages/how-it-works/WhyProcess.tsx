@@ -27,7 +27,7 @@ export default function WhyProcess() {
         </div>
 
         <p className="mt-8 text-center max-w-4xl mx-auto text-[19px] md:text-lg leading-7 opacity-95">
-          Whether you're looking to lower your monthly payment, get out of default,
+          Whether you&apos;re looking to lower your monthly payment, get out of default,
           or just understand your options, Reductionly gives you the tools you need
           to take back control.
         </p>

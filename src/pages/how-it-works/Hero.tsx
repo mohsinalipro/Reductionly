@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import GlobalBtn from "@/pages/_components/GlobalBtn";
 import HeroImg from "../../_assets/pngs/hero-img.png";
 
 export default function HowItWorksHero() {
